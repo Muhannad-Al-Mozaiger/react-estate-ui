@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .card {
     display: flex;
     gap: 20px;
@@ -5,6 +7,10 @@
     .imageContainer {
         flex: 2;
         height: 200px;
+
+        @include md {
+            display: none;
+        }
 
         img {
             width: 100%;
@@ -66,32 +72,32 @@
                 gap: 20px;
                 font-size: 14px;
 
-                .feature{
+                .feature {
                     display: flex;
                     align-items: center;
                     gap: 5px;
                     background-color: whitesmoke;
                     padding: 5px;
-                    border-radius: 5px; 
+                    border-radius: 5px;
 
                 }
 
             }
 
-            .icons{
+            .icons {
                 display: flex;
                 gap: 20px;
 
-                .icon{
-                    border:  1px solid #999;
+                .icon {
+                    border: 1px solid #999;
                     padding: 2px 5px;
                     border-radius: 5px;
-                    cursor: pointer; 
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    &:hover{
+                    &:hover {
                         background-color: lightgray;
                     }
                 }
